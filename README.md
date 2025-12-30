@@ -29,6 +29,36 @@ Pas besoin de téléchargement ! Vous pouvez tester la dernière version du proj
 
 ---
 
+## 🎮 Commandes du Jeu
+
+🏃 Rapide :
+
+| | <kbd>&nbsp; Z &nbsp;</kbd> | |
+| :---: | :---: | :---: |
+| <kbd>&nbsp; Q &nbsp;</kbd> | <kbd>&nbsp; S &nbsp;</kbd> | <kbd>&nbsp; D &nbsp;</kbd> |
+* 🔄 **Caméra** : <kbd>&nbsp; ← &nbsp;</kbd> <kbd>&nbsp; → &nbsp;</kbd>
+* ✨ **Action** : <kbd>&nbsp; Entrée &nbsp;</kbd>
+* ⚙️ **Pause** : <kbd>&nbsp; Échap &nbsp;</kbd>
+
+🕹️ Contrôles du personnage en détail :
+
+- <kbd>Z</kbd> : Avancer ⬆️ 
+- <kbd>Q</kbd> : Aller à gauche ⬅️ 
+- <kbd>S</kbd> : Reculer ⬇️ 
+- <kbd>D</kbd> : Aller à droite ➡️ 
+
+🎥 Caméra & Action :
+
+- <kbd>←</kbd> / <kbd>→</kbd> : Faire pivoter la caméra 🔄
+
+- <kbd>Entrée</kbd> : Action ! (Interagir, ramasser, parler) ✨
+
+⚙️ Système :
+
+- <kbd>Échap</kbd> : Ouvrir le menu / Pause ⏸️
+
+---
+
 ## ✨ Caractéristiques du projet
 
 * **Esthétique 2.5D :** Un mélange unique de sprites 2D dans un environnement 3D.
