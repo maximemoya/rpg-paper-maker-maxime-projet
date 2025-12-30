@@ -1,6 +1,8 @@
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/db948a2f-4e82-4006-9aee-89401d768221" alt="rpg-paper-maker-titlescreen" width="1600">
+  <a href= "https://maximemoya.github.io/rpg-paper-maker-maxime-projet/">
+    <img src="https://github.com/user-attachments/assets/db948a2f-4e82-4006-9aee-89401d768221" alt="rpg-paper-maker-titlescreen" width="1600">
+  </a>
 </div>
 
 # ⚔️ Mon Aventure RPG-PAPER-MAKER
@@ -15,7 +17,9 @@ Bienvenue dans l'univers de mon aventure sur **RPG-PAPER-MAKER**, c'est un RPG d
 ## 📸 Aperçu
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/b8a3781e-e64e-4e73-9d7d-b80fe1c43fab" alt="Aperçu du jeu">
+  <a href= "https://maximemoya.github.io/rpg-paper-maker-maxime-projet/">
+    <img src="https://github.com/user-attachments/assets/b8a3781e-e64e-4e73-9d7d-b80fe1c43fab" alt="Aperçu du jeu">
+  </a>
   <p><i>Captures d'écran du monde de RPG Paper Maker</i></p>
 </div>
 
