@@ -70,16 +70,33 @@ export class Song extends Base {
         return `${Song.getFolder(this.kind, this.isBR, this.dlc)}/${this.name}`;
     }
     /**
+     * Get the audio format from the file name.
+     */
+    getFormat() {
+        if (this.name) {
+            const ext = this.name.split('.').pop()?.toLowerCase();
+            if (ext && ['mp3', 'wav', 'ogg', 'aac', 'm4a', 'webm'].includes(ext)) {
+                return ext;
+            }
+        }
+        return undefined;
+    }
+    /**
      * Load the song into memory.
      */
     load() {
         if (this.id !== -1 && !this.howl) {
-            this.howl = new Howl({
+            const format = this.getFormat();
+            const config = {
                 src: [this.getPath()],
                 loop: this.kind !== SONG_KIND.MUSIC_EFFECT,
                 html5: true,
                 pool: 10,
-            });
+            };
+            if (format) {
+                config.format = [format];
+            }
+            this.howl = new Howl(config);
             if (this.base64) {
                 this.base64 = '';
             }

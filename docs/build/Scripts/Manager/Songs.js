@@ -152,10 +152,15 @@ class Songs {
         }
         const sound = Data.Songs.get(SONG_KIND.SOUND, id);
         if (sound) {
-            const howl = new Howl({
+            const format = sound.getFormat();
+            const config = {
                 src: [sound.getPath()],
                 volume: volume,
-            });
+            };
+            if (format) {
+                config.format = [format];
+            }
+            const howl = new Howl(config);
             this.currentSounds[id] = howl;
             howl.play();
         }
