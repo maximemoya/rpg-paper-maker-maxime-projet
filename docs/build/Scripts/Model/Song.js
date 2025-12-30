@@ -90,14 +90,14 @@ export class Song extends Base {
             const config = {
                 src: [this.getPath()],
                 loop: this.kind !== SONG_KIND.MUSIC_EFFECT,
-                html5: true,
             };
             if (format) {
                 config.format = [format];
             }
-            // Pool is only useful for short sound effects that can play multiple times simultaneously
-            // For music and background sounds (which loop), we only need one instance
+            // For short sound effects: use HTML5 Audio with pool for multiple simultaneous plays
+            // For music and background sounds: use Web Audio API (better for long files and loops)
             if (this.kind === SONG_KIND.SOUND || this.kind === SONG_KIND.MUSIC_EFFECT) {
+                config.html5 = true;
                 config.pool = 5;
             }
             this.howl = new Howl(config);
