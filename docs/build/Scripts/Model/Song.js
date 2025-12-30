@@ -91,10 +91,14 @@ export class Song extends Base {
                 src: [this.getPath()],
                 loop: this.kind !== SONG_KIND.MUSIC_EFFECT,
                 html5: true,
-                pool: 10,
             };
             if (format) {
                 config.format = [format];
+            }
+            // Pool is only useful for short sound effects that can play multiple times simultaneously
+            // For music and background sounds (which loop), we only need one instance
+            if (this.kind === SONG_KIND.SOUND || this.kind === SONG_KIND.MUSIC_EFFECT) {
+                config.pool = 5;
             }
             this.howl = new Howl(config);
             if (this.base64) {
